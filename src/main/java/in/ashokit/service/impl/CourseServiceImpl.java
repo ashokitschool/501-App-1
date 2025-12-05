@@ -11,7 +11,12 @@ import in.ashokit.service.CourseService;
 
 @Service
 public class CourseServiceImpl implements CourseService {
-	
 
+    @Autowired
+    private CourseRepo courseRepo;
 
+    @Override
+    public List<Course> getCourses() {
+        return courseRepo.findAll();
+    }
 }

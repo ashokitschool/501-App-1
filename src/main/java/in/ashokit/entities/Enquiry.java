@@ -22,7 +22,6 @@ public class Enquiry {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer enqId;
-
 	private String stuName;
 	private String stuPhno;
 	private String classMode;

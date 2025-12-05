@@ -9,7 +9,7 @@ import in.ashokit.entities.Enquiry;
 
 public interface EnquiryService {
 	
-    public boolean addEnquiry(EnquiryDto enquiryDto);
+    public boolean addEnquiry(EnquiryDto enquiryDto, Integer counsellorId);
 
     public List<Enquiry> getAllEnquiries(Integer counsellorId);
 
